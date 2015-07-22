@@ -1,3 +1,78 @@
-figure{
-	text-align:center;
+html{
+	font-family:'Varela Round';
 }
+header {
+  width: 95%;
+}
+header nav {
+  width: 101.7%;
+  margin: 20px auto;
+  background-color: #0d5c2d;
+}
+ul{
+	display:flex;
+	justify-content:space-between;
+}
+.menu-bar {
+  display: none;
+}
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+header nav ul li span {
+  margin-right: 10px;
+}
+header nav ul li a:hover {
+  background: #0d7f2d;
+}
+.section-top figure img{
+	max-width:100%;
+	height: auto;
+	width:auto;
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    width: 75%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+    z-index: 11;
+  }
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  .menu-bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+  }
+  .menu-bar .btn-menu {
+    display: block;
+    padding: 20px;
+    background-color: #0d5c2d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .menu-bar span {
+    float: right;
+    font-size: 40px;
+  }
+  }

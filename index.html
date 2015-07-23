@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="">
 	<link type="text/css"rel="stylesheet" href="css/estilos.css">
-	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<title>Inicio</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 			<a href="#"class="btn-menu"><span class="icon-menu"></span>Menu</a>
 		</div>
 		<nav>
-			<ul>
+			<ul class="menu-item">
 				<li><a href="index.html" class="active"><span class="icon-home3"></span>Inicio</a></li>
 				<li><a href="acerca.html"><span class="icon-file-text"></span>Comentarios</a></li>
 				<li><a href="contact.html"><span class="icon-mail"></span>Productos</a></li>
@@ -23,31 +23,104 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="logo"><img src="img/logoK.jpg" alt=""></div>
+	<div class="logo"><img src="img/logoK.png" width="199" height="86" alt=""></div>
 	<section class="section-top">
 		<figure>
 			<img src="img/personaliza-web.jpg" alt="">
 		</figure>
 	</section>
-	<section class="section-mid">
-		<article class="section-mid-item">
-			<figure><img src="" alt=""></figure>
+
+	<section class="section-bot">
+		<article class="article-productos">
+			<figure class="article-productos-img" onClick="cambiarImagenes('img/convencional/Convencional-1.png')"><img src="img/convencional/Convencional-1.png" width="180" height="180" alt="">
+			<p>Convencional</p>
+			</figure>
 		</article>
-		<article class="section-mid-item">
-			<figure>+
-		<article class="section-mid-item">
-			<figure><img src="" alt=""></figure>
+		<article class="article-productos">
+			<figure class="article-productos-img" onClick="cambiarImagenes2()"><img src="img/identidad/Identidad-Corp-1.png" width="180" height="180" alt="">
+			<p>Identidad</p>
+			</figure>
 		</article>
-		<article class="section-mid-item">
-			<figure><img src="" alt=""></figure>
+		<article class="article-productos">
+			<figure class="article-productos-img" onClick="cambiarImagenes3()"><img src="img/Infantil/Infantil-1.png" width="180" height="180" alt="">
+			<p>Infantil</p>
+			</figure>
 		</article>
-		<article class="section-mid-item">
-			<figure><img src="" alt=""></figure>
+		<article class="article-productos">
+			<figure class="article-productos-img" onClick="cambiarImagenes4()"><img src="img/juvenil/Juvenil-1.png" width="180" height="180" alt="">
+			<p>Juvenil</p>
+			</figure>
 		</article>
 	</section>
+	<section class="section-bot-img">
+	<p id="text"></p>
+					<article class="article-bot-img">
+						<figure id="img1">
+						</figure>
+						<figure id="img2">
+						</figure>
+						<figure id="img3">
+						</figure>
+					</article>
+					<article class="article-bot-img">
+					
+						<figure id="identidad-img1">
+						</figure>
+						<figure id="identidad-img2">
+						</figure>
+						<figure id="identidad-img3">
+						</figure>
+					</article>
+					<article class="article-bot-img">
+					
+						<figure id="infantil-img1">
+						</figure>
+						<figure id="infantil-img2">
+						</figure>
+					</article>
+					<article class="article-bot-img">
+					
+						<figure id="Juvenil-img1">
+						</figure>
+						<figure id="Juvenil-img2">
+						</figure>
+					</article>
+	</section>
+
 </body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/hide.js"></script>
+<script>
+	function cambiarImagenes()
+	{
+		document.getElementById("text").innerHTML = "<p>CONVENCIONAL</p>";
+		document.getElementById("img1").innerHTML = "<img src='img/convencional/Convencional-1.png' />";
+		document.getElementById("img2").innerHTML = "<img src='img/convencional/Convencional-2.png' />";
+		document.getElementById("img3").innerHTML = "<img src='img/convencional/Convencional-3.png' />";
+	}
+	function cambiarImagenes2()
+	{
+		document.getElementById("text").innerHTML = "<p>IDENTIDAD</p>";
+		document.getElementById("img1").innerHTML = "<img src='img/Identidad/Identidad-Corp-1.png' />";
+		document.getElementById("img2").innerHTML = "<img src='img/Identidad/Identidad-Corp-2.png' />";
+		document.getElementById("img3").innerHTML = "<img src='img/Identidad/Identidad-Corp-3.png' />";
+	}
+	function cambiarImagenes3()
+	{
+		document.getElementById("text").innerHTML = "<p>INFANTIL</p>";
+		document.getElementById("img1").innerHTML = "<img src='img/Infantil/Infantil-1.png' />";
+		document.getElementById("img2").innerHTML = "<img src='img/Infantil/Infantil-2.png' />";
+	}
+	function cambiarImagenes4()
+	{
+		document.getElementById("text").innerHTML = "<p>JUVENIL</p>";
+		document.getElementById("img1").innerHTML = "<img src='img/Juvenil/Juvenil-1.png' />";
+		document.getElementById("img2").innerHTML = "<img src='img/Juvenil/Juvenil-2.png' />";
+	}
+</script>
 </html>
 
 
 
+ 

@@ -1,15 +1,17 @@
+@import url("normalize.css");
 html{
-	font-family:'Varela Round';
+	font-family: 'Ubuntu', sans-serif;
+	background-color:#E3E3E3;
 }
 header {
-  width: 95%;
+  width: 100%;
 }
 header nav {
-  width: 101.7%;
+  width: 100%;
   margin: 20px auto;
-  background-color: #0d5c2d;
+  background-color: #ADD136;
 }
-ul{
+.menu-item{
 	display:flex;
 	justify-content:space-between;
 }
@@ -33,15 +35,115 @@ header nav ul li span {
   margin-right: 10px;
 }
 header nav ul li a:hover {
-  background: #0d7f2d;
+  background: #C0F904;
+}
+.section-top figure{
+  margin:0px 0px;
 }
 .section-top figure img{
 	max-width:100%;
 	height: auto;
 	width:auto;
 }
-@media screen and (max-width: 700px) {
-  header nav {
+.section-bot{
+  margin-top:0px;
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#58A9A1;
+}
+.article-productos{
+	margin:0 auto;
+}
+.article-productos-img{
+	cursor:pointer;
+}
+.article-productos-img img{
+	border-radius:50%;	
+	background-color:white;
+}
+.article-productos-img p{
+	text-align:center;
+	font-size:25px;
+	color:white;
+}
+.section-bot-img{
+	color:white;
+	background-color:#DF7448;
+	
+}
+.section-bot-img p{
+  margin-top:0px;
+}
+.article-bot-img{
+	width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#text{
+	width:100%;
+	text-align:center;
+	font-size:35px;
+}
+#img1 {
+	margin:0 auto;
+}
+#img2 {
+	margin:0 auto;
+}
+#img3 {
+	margin:0 auto;
+}
+#identidad-img1 {
+	margin:0 auto;
+}
+#identidad-img2 {
+	margin:0 auto;
+}
+#identidad-img3 {
+	margin:0 auto;
+}
+#Juvenil-img1 {
+	margin:0 auto;
+}
+#infantil-img2 {
+	margin:0 auto;
+}
+#infantil-img1 {
+	margin:0 auto;
+}
+#img1 img{
+	width:350px;
+}
+#img2 img{
+	width:350px;
+}
+#img3 img{
+	width:350px;
+}
+#identidad-img1 img{
+	width:350px;
+}
+#identidad-img2 img{
+	width:350px;
+}
+#identidad-img3 img{
+	width:350px;
+}
+#Juvenil-img1 img{
+	width:350px;
+}
+#Juvenil-img2 img{
+	width:350px;
+}
+#infantil-img2 img{
+	width:350px;
+}
+#infantil-img1 img{
+	width:350px;
+}
+@media screen and (max-width: 700px){
+header nav{
     width: 75%;
     height: 100%;
     left: -100%;
@@ -49,11 +151,14 @@ header nav ul li a:hover {
     position: fixed;
     z-index: 11;
   }
-  header nav ul li {
+.menu-item{
+	display: block;
+}
+header nav ul li {
     display: block;
     float: none;
     border-bottom: 1px solid rgba(255,255,255,0.3);
-  }
+}
   .menu-bar {
     display: block;
     width: 100%;
@@ -62,7 +167,7 @@ header nav ul li a:hover {
   .menu-bar .btn-menu {
     display: block;
     padding: 20px;
-    background-color: #0d5c2d;
+    background-color: #ADD136;
     color: #fff;
     text-decoration: none;
     font-weight: bold;

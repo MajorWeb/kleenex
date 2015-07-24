@@ -54,6 +54,9 @@ header nav ul li a:hover {
 .article-productos{
 	margin:0 auto;
 }
+.article-productos a{
+  text-decoration:none;
+}
 .article-productos-img{
 	cursor:pointer;
 }
@@ -86,6 +89,9 @@ header nav ul li a:hover {
 	width:100%;
 	text-align:center;
 	font-size:35px;
+}
+#producto-1:focus{
+  display:none;
 }
 .article-bot-img figure{
   margin:0 auto;

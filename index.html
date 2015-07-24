@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="">
 	<link type="text/css"rel="stylesheet" href="css/estilos.css">
+	<link type="text/css"rel="stylesheet" href="css/transponer.css">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<title>Inicio</title>
 </head>
@@ -32,133 +34,188 @@
 
 	<section class="section-bot">
 		<article class="article-productos">
-			<figure class="article-productos-img" onClick="cambiarImagenes()"><img src="img/iconos/Convencional.jpg" width="180" height="180" alt="">
+			<a href="#modal-one">
+			<figure class="article-productos-img"><img src="img/iconos/Convencional.jpg" width="180" height="180" alt="">
 			<p>Convencional</p>
 			</figure>
+			</a>
 		</article>
 		<article class="article-productos">
-			<figure class="article-productos-img" onClick="cambiarImagenes2()"><img src="img/iconos/Identidad-Corporativa.jpg" width="180" height="180" alt="">
+			<a href="#modal-two">
+			<figure class="article-productos-img"><img src="img/iconos/Identidad-Corporativa.jpg" width="180" height="180" alt="">
 			<p>Identidad</p>
 			</figure>
+			</a>
 		</article>
 		<article class="article-productos">
-			<figure class="article-productos-img" onClick="cambiarImagenes3()"><img src="img/iconos/Infantil.jpg" width="180" height="180" alt="">
+			<a href="#modal-three">
+			<figure class="article-productos-img"><img src="img/iconos/Infantil.jpg" width="180" height="180" alt="">
 			<p>Infantil</p>
 			</figure>
+			</a>
 		</article>
 		<article class="article-productos">
-			<figure class="article-productos-img" onClick="cambiarImagenes4()"><img src="img/iconos/Juvenil.jpg" width="180" height="180" alt="">
+			<a href="#modal-four">
+			<figure class="article-productos-img"><img src="img/iconos/Juvenil.jpg" width="180" height="180" alt="">
 			<p>Juvenil</p>
 			</figure>
+			</a>
 		</article>
 		<article class="article-productos">
-			<figure class="article-productos-img" onClick="cambiarImagenes5()"><img src="img/iconos/Licencias.jpg" width="180" height="180" alt="">
+			<a href="#modal-fifth">
+			<figure class="article-productos-img"><img src="img/iconos/Licencias.jpg" width="180" height="180" alt="">
 			<p>Licencia</p>
 			</figure>
+			</a>
 		</article>
 	</section>
 	<section class="section-bot-img">
-	<p id="text"></p>
-					<article class="article-bot-img">
+
+			<a href="#" class="modal" id="modal-one" aria-hidden="true">
+	  		</a>
+			  <div class="modal-dialog">
+			    <div class="modal-header">
+			      <h2>CONVENCIONAL</h2>
+			      <a href="#" class="btn-close" aria-hidden="true">×</a>
+			    </div>
+			    <div class="modal-body">
+			      <img src="img/convencional/Convencional-1.png" width="350"/>
+			      <img src="img/convencional/Convencional-2.png" width="350"/>
+			      <img src="img/convencional/Convencional-3.png" width="350"/>
+			    </div>
+			    <div class="modal-footer">
+			      <h2>Totalmente personalizable!</h2>
+			    </div>
+			  </div>
+
+			  <a href="#" class="modal" id="modal-two" aria-hidden="true">
+	  		</a>
+			  <div class="modal-dialog">
+			    <div class="modal-header">
+			      <h2>IDENTIDAD</h2>
+			      <a href="#" class="btn-close" aria-hidden="true">×</a>
+			    </div>
+			    <div class="modal-body">
+			      <img src="img/Identidad/Identidad-Corp-1.png" width="350"/>
+			      <img src="img/Identidad/Identidad-Corp-2.png" width="350"/>
+			      <img src="img/Identidad/Identidad-Corp-3.png" width="350"/>
+			    </div>
+			    <div class="modal-footer">
+			      <h2>Totalmente personalizable!</h2>
+			    </div>
+			  </div>
+
+			    <a href="#" class="modal" id="modal-three" aria-hidden="true">
+	  		</a>
+			  <div class="modal-dialog">
+			    <div class="modal-header">
+			      <h2>INFANTIL</h2>
+			      <a href="#" class="btn-close" aria-hidden="true">×</a>
+			    </div>
+			    <div class="modal-body">
+			      <img src="img/Infantil/Infantil-1.png" width="350"/>
+			      <img src="img/Infantil/Infantil-2.png" width="350"/>
+			    </div>
+			    <div class="modal-footer">
+			      <h2>Totalmente personalizable!</h2>
+			    </div>
+			  </div>
+				
+
+					<a href="#" class="modal" id="modal-four" aria-hidden="true">
+	  		</a>
+			  <div class="modal-dialog">
+			    <div class="modal-header">
+			      <h2>JUVENIL</h2>
+			      <a href="#" class="btn-close" aria-hidden="true">×</a>
+			    </div>
+			    <div class="modal-body">
+			      <img src="img/Juvenil/Juvenil-1.png" width="350"/>
+			      <img src="img/Juvenil/Juvenil-2.png" width="350"/>
+			    </div>
+			    <div class="modal-footer">
+			      <h2>Totalmente personalizable!</h2>
+			    </div>
+			  </div>
+						
+
+						<a href="#" class="modal" id="modal-fifth" aria-hidden="true">
+	  		</a>
+			  <div class="modal-dialog">
+			    <div class="modal-header">
+			      <h2>LICENCIA</h2>
+			      <a href="#" class="btn-close" aria-hidden="true">×</a>
+			    </div>
+			    <div class="modal-body">
+			      <img src="img/Licencia/Licencia-1.png" width="350"/>
+			      <img src="img/Licencia/Licencia-2.png" width="350"/>
+			      <img src="img/Licencia/Licencia-3.png" width="350"/>
+			      <img src="img/Licencia/Licencia-4.png" width="350"/>
+			    </div>
+			    <div class="modal-footer">
+			      <h2>Totalmente personalizable!</h2>
+			    </div>
+			  </div>
+
+
+					<!-- <article class="article-bot-img">
+						<a href="#" class="modal" id="modal-one" aria-hidden="true"> </a>
 						<figure id="img1">
+						<img src="img/convencional/Convencional-1.png"/>
 						</figure>
 						<figure id="img2">
+						<img src="img/convencional/Convencional-2.png"/>
 						</figure>
 						<figure id="img3">
-						</figure>
-						<figure id="img4">
+						<img src="img/convencional/Convencional-3.png"/>
 						</figure>
 					</article>
-					<article class="article-bot-img">
+					<article class="article-bot-img modal" id="modal-one" aria-hidden="true">
+						<figure id="img4">
+						<img src="img/Identidad/Identidad-Corp-1.png"/>
+						</figure>
+						<figure id="img5">
+						<img src="img/Identidad/Identidad-Corp-2.png"/>
+						</figure>
+						<figure id="img6">
+						<img src="img/Identidad/Identidad-Corp-3.png"/>
+						</figure>
+					</article>
+					<article class="article-bot-img modal" id="modal-one" aria-hidden="true">
 					
-						<figure id="img1">
+						<figure id="img7">
+						<img src="img/Infantil/Infantil-1.png"/>
 						</figure>
-						<figure id="img2">
-						</figure>
-						<figure id="img3">
-						</figure>
-						<figure id="img3">
-						</figure>
-						<figure id="img4">
+						<figure id="img8">
+						<img src="img/Infantil/Infantil-2.png"/>
 						</figure>
 					</article>
-					<article class="article-bot-img">
+					<article class="article-bot-img modal" id="modal-one" aria-hidden="true">
 					
-						<figure id="img1">
+						<figure id="img9">
+						<img src="img/Juvenil/Juvenil-1.png"/>
 						</figure>
-						<figure id="img2">
-						</figure>
-						<figure id="img3">
-						</figure>
-						<figure id="img4">
+						<figure id="img10">
+						<img src="img/Juvenil/Juvenil-2.png"/>
 						</figure>
 					</article>
-					<article class="article-bot-img">
-					
-						<figure id="img1">
+					<article class="article-bot-img modal" id="modal-one" aria-hidden="true">
+						<figure id="img11">
+						<img src="img/Licencia/Licencia-1.png" width="350"/>
 						</figure>
-						<figure id="img2">
+						<figure id="img12">
+						<img src="img/Licencia/Licencia-2.png"/>
 						</figure>
-						<figure id="img3">
+						<figure id="img13">
+						<img src="img/Licencia/Licencia-3.png"/>
 						</figure>
-						<figure id="img4">
+						<figure id="img14">
+						<img src="img/Licencia/Licencia-4.png"/>
 						</figure>
-					</article>
-					<article class="article-bot-img">
-						<figure id="img1">
-						</figure>
-						<figure id="img2">
-						</figure>
-						<figure id="img3">
-						</figure>
-						<figure id="img4">
-						</figure>
-					</article>
+					</article> -->
 	</section>
 
 </body>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/menu.js"></script>
-<script src="js/hide.js"></script>
-<script>
-	function cambiarImagenes()
-	{
-		document.getElementById("text").innerHTML = "<p>CONVENCIONAL</p>";
-		document.getElementById("img1").innerHTML = "<img src='img/convencional/Convencional-1.png' />";
-		document.getElementById("img2").innerHTML = "<img src='img/convencional/Convencional-2.png' />";
-		document.getElementById("img3").innerHTML = "<img src='img/convencional/Convencional-3.png' />";
-	}
-	function cambiarImagenes2()
-	{
-		document.getElementById("text").innerHTML = "<p>IDENTIDAD</p>";
-		document.getElementById("img1").innerHTML = "<img src='img/Identidad/Identidad-Corp-1.png' />";
-		document.getElementById("img2").innerHTML = "<img src='img/Identidad/Identidad-Corp-2.png' />";
-		document.getElementById("img3").innerHTML = "<img src='img/Identidad/Identidad-Corp-3.png' />";
-	}
-	function cambiarImagenes3()
-	{
-		document.getElementById("text").innerHTML = "<p>INFANTIL</p>";
-		document.getElementById("img1").innerHTML = "<img src='img/Infantil/Infantil-1.png' />";
-		document.getElementById("img2").innerHTML = "<img src='img/Infantil/Infantil-2.png' />";
-	}
-	function cambiarImagenes4()
-	{
-		document.getElementById("text").innerHTML = "<p>JUVENIL</p>";
-		document.getElementById("img1").innerHTML = "<img src='img/Juvenil/Juvenil-1.png' />";
-		document.getElementById("img2").innerHTML = "<img src='img/Juvenil/Juvenil-2.png' />";
-	}
-	function cambiarImagenes5()
-	{
-		document.getElementById("text").innerHTML = "<p>JUVENIL</p>";
-		document.getElementById("img1").innerHTML = "<img src='img/Licencia/Licencia-1.png' />";
-		document.getElementById("img2").innerHTML = "<img src='img/Licencia/Licencia-2.png' />";
-		document.getElementById("img3").innerHTML = "<img src='img/Licencia/Licencia-3.png' />";
-		document.getElementById("img4").innerHTML = "<img src='img/Licencia/Licencia-4.png' />";
-	}
-
-</script>
 </html>
-
-
-
- 

@@ -16,10 +16,10 @@
 		<nav>
 			<ul class="menu-item">
 				<li><a href="index.html" class="active"><span class="icon-home3"></span>Inicio</a></li>
-				<li><a href="acerca.html"><span class="icon-file-text"></span>Comentarios</a></li>
-				<li><a href="contact.html"><span class="icon-mail"></span>Productos</a></li>
-				<li><a href="contact.html"><span class="icon-mail"></span>Diseño</a></li>
-				<li><a href="contact.html"><span class="icon-mail"></span>Contacto</a></li>
+				<li><a href="index.html"><span class="icon-file-text"></span>Comentarios</a></li>
+				<li><a href="index.html"><span class="icon-mail"></span>Productos</a></li>
+				<li><a href="index.html"><span class="icon-mail"></span>Diseño</a></li>
+				<li><a href="index.html"><span class="icon-mail"></span>Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -51,6 +51,11 @@
 			<p>Juvenil</p>
 			</figure>
 		</article>
+		<article class="article-productos">
+			<figure class="article-productos-img" onClick="cambiarImagenes5()"><img src="img/Licencia/Licencia-1.png" width="180" height="180" alt="">
+			<p>Licencia</p>
+			</figure>
+		</article>
 	</section>
 	<section class="section-bot-img">
 	<p id="text"></p>
@@ -61,28 +66,50 @@
 						</figure>
 						<figure id="img3">
 						</figure>
-					</article>
-					<article class="article-bot-img">
-					
-						<figure id="identidad-img1">
-						</figure>
-						<figure id="identidad-img2">
-						</figure>
-						<figure id="identidad-img3">
+						<figure id="img4">
 						</figure>
 					</article>
 					<article class="article-bot-img">
 					
-						<figure id="infantil-img1">
+						<figure id="img1">
 						</figure>
-						<figure id="infantil-img2">
+						<figure id="img2">
+						</figure>
+						<figure id="img3">
+						</figure>
+						<figure id="img4">
 						</figure>
 					</article>
 					<article class="article-bot-img">
 					
-						<figure id="Juvenil-img1">
+						<figure id="img1">
 						</figure>
-						<figure id="Juvenil-img2">
+						<figure id="img2">
+						</figure>
+						<figure id="img3">
+						</figure>
+						<figure id="img4">
+						</figure>
+					</article>
+					<article class="article-bot-img">
+					
+						<figure id="img1">
+						</figure>
+						<figure id="img2">
+						</figure>
+						<figure id="img3">
+						</figure>
+						<figure id="img4">
+						</figure>
+					</article>
+					<article class="article-bot-img">
+						<figure id="img1">
+						</figure>
+						<figure id="img2">
+						</figure>
+						<figure id="img3">
+						</figure>
+						<figure id="img4">
 						</figure>
 					</article>
 	</section>
@@ -118,6 +145,15 @@
 		document.getElementById("img1").innerHTML = "<img src='img/Juvenil/Juvenil-1.png' />";
 		document.getElementById("img2").innerHTML = "<img src='img/Juvenil/Juvenil-2.png' />";
 	}
+	function cambiarImagenes5()
+	{
+		document.getElementById("text").innerHTML = "<p>JUVENIL</p>";
+		document.getElementById("img1").innerHTML = "<img src='img/Licencia/Licencia-1.png' />";
+		document.getElementById("img2").innerHTML = "<img src='img/Licencia/Licencia-2.png' />";
+		document.getElementById("img3").innerHTML = "<img src='img/Licencia/Licencia-3.png' />";
+		document.getElementById("img4").innerHTML = "<img src='img/Licencia/Licencia-4.png' />";
+	}
+
 </script>
 </html>
 

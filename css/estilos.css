@@ -69,6 +69,8 @@ header nav ul li a:hover {
 .section-bot-img{
 	color:white;
 	background-color:#DF7448;
+  display:flex;
+  flex-wrap:wrap;
 	
 }
 .section-bot-img p{
@@ -85,62 +87,11 @@ header nav ul li a:hover {
 	text-align:center;
 	font-size:35px;
 }
-#img1 {
-	margin:0 auto;
+.article-bot-img figure{
+  margin:0 auto;
 }
-#img2 {
-	margin:0 auto;
-}
-#img3 {
-	margin:0 auto;
-}
-#identidad-img1 {
-	margin:0 auto;
-}
-#identidad-img2 {
-	margin:0 auto;
-}
-#identidad-img3 {
-	margin:0 auto;
-}
-#Juvenil-img1 {
-	margin:0 auto;
-}
-#infantil-img2 {
-	margin:0 auto;
-}
-#infantil-img1 {
-	margin:0 auto;
-}
-#img1 img{
-	width:350px;
-}
-#img2 img{
-	width:350px;
-}
-#img3 img{
-	width:350px;
-}
-#identidad-img1 img{
-	width:350px;
-}
-#identidad-img2 img{
-	width:350px;
-}
-#identidad-img3 img{
-	width:350px;
-}
-#Juvenil-img1 img{
-	width:350px;
-}
-#Juvenil-img2 img{
-	width:350px;
-}
-#infantil-img2 img{
-	width:350px;
-}
-#infantil-img1 img{
-	width:350px;
+.article-bot-img img{
+  width:350px;
 }
 @media screen and (max-width: 700px){
 header nav{
